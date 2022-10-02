@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">APP_GK</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Phan Đức Kiên</string>
+    <string name="nav_header_subtitle">phankien110302@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="faceboook">Phan Kiên</string>
+    <string name="name">Phan Đức Kiên</string>
+    <string name="email">phankien110302@gmail.com</string>
+    <string name="phone">0374824645</string>
+    <string name="instagram">phankien03</string>
+    <string name="address">Nghe An, Viet Nam</string>
+    <string name="setting">setting</string>
+    <string name="user_image">user</string>
+</resources>

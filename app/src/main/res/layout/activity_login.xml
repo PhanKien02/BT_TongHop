@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#002233">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/forgot">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign In"
+            android:textColor="#fff"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="UserName"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="#fff"
+            android:textColorHint="#9E9D9D"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="106dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#fff"
+            android:textColorHint="#9E9D9D"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/txt_password"
+            android:layout_marginTop="24dp"
+            android:minHeight="100dp"
+            android:layout_marginLeft="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Remember me"
+                android:textColor="#FFFFFF"
+                android:minHeight="50dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="#E30000"
+                android:text="Forgot Password"
+                android:textSize="10dp"
+                android:layout_marginLeft="40dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/log_in"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_password"
+            android:layout_alignBottom="@+id/txt_password"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="-155dp"
+            android:background="@drawable/botron_button"
+            android:gravity="center"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log_in"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_marginRight="70dp"
+                android:gravity="center"
+                android:text="  Don't have a acccout"
+                android:textColor="#ffff" />
+
+            <Button
+                android:id="@+id/txt_regiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text=" Sing up"
+                android:textColor="#E30000" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
