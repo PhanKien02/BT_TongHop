@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -20,7 +22,21 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent registerActivity = new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(registerActivity);
+                EditText username = (EditText) findViewById(R.id.txt_username) ;
+                EditText pass = (EditText) findViewById(R.id.txt_password);
+                TextView err =  findViewById(R.id.textView2);
+                String user="kien1103";
+                String password="123456";
+                if(username.getText().toString().equals(user)  && pass.getText().toString().equals(password) ){
+                    startActivity(registerActivity);
+                }
+                if(username.getText().toString().equals("")  || pass.getText().toString().equals("") ){
+                    err.setText("Vui lòng nhập username password");
+                }
+                else{
+
+                    err.setText("Username hoặc password không đúng");
+                }
             }
         });
         btnSingup.setOnClickListener(new View.OnClickListener() {
