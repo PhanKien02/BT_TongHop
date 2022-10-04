@@ -38,6 +38,8 @@ public class ListViewActivity extends AppCompatActivity {
         fruits.add(new Fruit("Dâu tây","description dâu tây",R.drawable.dautay));
         fruits.add(new Fruit("Nho", "description nho",R.drawable.nho));
         fruits.add(new Fruit("Thơm", "description thơm",R.drawable.dua));
+        fruits.add(new Fruit("Chuoi", "description chuoi",R.drawable.chuoi));
+        fruits.add(new Fruit("Cherry", "description cherry",R.drawable.cherry));
         adapter = new Adapter(ListViewActivity.this,R.layout.activity_item,fruits);
         lv_fruit.setAdapter(adapter);
         lv_fruit.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {

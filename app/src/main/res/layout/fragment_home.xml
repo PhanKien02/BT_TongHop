@@ -57,7 +57,7 @@
             android:textColor="@color/address"
             android:textSize="14sp" />
 
-        <Button
+        <android.widget.Button
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_address"
@@ -65,7 +65,8 @@
             android:layout_marginTop="22dp"
             android:layout_toEndOf="@+id/avt"
             android:text="FOLLOWER"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:background="#2196F3"/>
     </RelativeLayout>
 
     <LinearLayout

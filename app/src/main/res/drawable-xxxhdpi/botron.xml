@@ -8,6 +8,6 @@
         android:right="6dp"
         android:bottom="6dp" />
     <corners android:radius="12dp" />
-    <gradient android:angle="-90" android:startColor="#9C0B0B" android:endColor="#fff"/>
+    <gradient android:angle="-90" android:startColor="#9C0B0B" android:endColor="#F3215C"/>
     <stroke android:width="2dp" android:color="#E30000" />
 </shape>

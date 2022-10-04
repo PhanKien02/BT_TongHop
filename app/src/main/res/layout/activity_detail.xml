@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity"
-    android:background="#002233"
+    android:background="@drawable/backgroundfruitdt"
     android:orientation="vertical">
 
     <TextView
@@ -15,8 +15,9 @@
         android:gravity="center"
         android:text="TextView"
         android:layout_gravity="center"
-        android:textColor="#fff"
+        android:textColor="#F31616"
         android:textStyle="bold"
+        android:textSize="20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="42dp" />
@@ -26,9 +27,10 @@
         android:layout_width="232dp"
         android:layout_height="127dp"
         android:gravity="center"
-        android:textColor="#fff"
+        android:textColor="#FFEB3B"
         android:layout_gravity="center"
         tools:ignore="MissingConstraints"
+        android:textSize="17dp"
         tools:layout_editor_absoluteX="89dp"
         tools:layout_editor_absoluteY="476dp" />
 

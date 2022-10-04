@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupActivity"
-    android:background="#002233">
+    android:background="@drawable/backgroundfruitdt">
     <RelativeLayout
         android:id="@+id/forgot"
         android:layout_width="match_parent"
@@ -35,7 +35,8 @@
             android:hint="UserName"
             android:inputType="text"
             android:minHeight="48dp"
-            android:textColorHint="#9E9D9D"
+            android:textColor="#000000"
+            android:textColorHint="#F3E145"
             android:textSize="10pt" />
 
         <EditText
@@ -50,7 +51,8 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColorHint="#9E9D9D"
+            android:textColor="#000"
+            android:textColorHint="#F3E145"
             android:textSize="10pt" />
 
         <EditText
@@ -65,7 +67,8 @@
             android:hint="Confirm Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColorHint="#9E9D9D"
+            android:textColor="#000"
+            android:textColorHint="#F3E145"
             android:textSize="10pt" />
 
 
@@ -97,10 +100,10 @@
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:text=" Sing in"
-                android:textColor="@color/text_color" />
+                android:textColor="#000000" />
         </LinearLayout>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/button"
             android:layout_width="300dp"
             android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="#002233">
+    android:background="@drawable/backgroundfruitdt">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,8 +35,8 @@
             android:hint="UserName"
             android:inputType="text"
             android:minHeight="48dp"
-            android:textColor="#fff"
-            android:textColorHint="#9E9D9D"
+            android:textColor="#F3E145"
+            android:textColorHint="#F3E145"
             android:textSize="10pt" />
 
         <EditText
@@ -51,8 +51,8 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColor="#fff"
-            android:textColorHint="#9E9D9D"
+            android:textColor="#F3E145"
+            android:textColorHint="#F3E145"
             android:textSize="10pt" />
 
         <LinearLayout
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:minHeight="50dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="30dp"
                 android:text="Remember me"
                 android:textColor="#FFFFFF" />
 
@@ -77,20 +77,20 @@
                 android:layout_marginLeft="40dp"
                 android:background="@android:color/transparent"
                 android:text="Forgot Password"
-                android:textColor="#E30000"
+                android:textColor="#000000"
                 android:textSize="10dp" />
         </LinearLayout>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/log_in"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/txt_password"
             android:layout_alignBottom="@+id/txt_password"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="-1dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="40dp"
-            android:layout_marginBottom="-175dp"
+            android:layout_marginBottom="-233dp"
             android:background="@drawable/botron_button"
             android:gravity="center"
             android:text="Sign in" />
@@ -123,7 +123,7 @@
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:text=" Sing up"
-                android:textColor="#E30000" />
+                android:textColor="#000000" />
         </LinearLayout>
 
         <TextView
