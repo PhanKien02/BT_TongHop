@@ -35,7 +35,7 @@
             android:hint="UserName"
             android:inputType="text"
             android:minHeight="48dp"
-            android:textColor="#F3E145"
+            android:textColor="#590505"
             android:textColorHint="#F3E145"
             android:textSize="10pt" />
 
@@ -51,7 +51,7 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColor="#F3E145"
+            android:textColor="#590505"
             android:textColorHint="#F3E145"
             android:textSize="10pt" />
 

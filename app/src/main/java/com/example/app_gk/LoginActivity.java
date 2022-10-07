@@ -21,14 +21,14 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerActivity = new Intent(LoginActivity.this,MainActivity.class);
+                Intent loginActivity = new Intent(LoginActivity.this,MainActivity.class);
                 EditText username = (EditText) findViewById(R.id.txt_username) ;
                 EditText pass = (EditText) findViewById(R.id.txt_password);
                 TextView err =  findViewById(R.id.textView2);
                 String user="kien1103";
                 String password="123456";
                 if(username.getText().toString().equals(user)  && pass.getText().toString().equals(password) ){
-                    startActivity(registerActivity);
+                    startActivity(loginActivity);
                 }
                 if(username.getText().toString().equals("")  || pass.getText().toString().equals("") ){
                     err.setText("Vui lòng nhập username password");

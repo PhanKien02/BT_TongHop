@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class SignupActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,18 +18,34 @@ public class SignupActivity extends AppCompatActivity {
         //  singin User
         TextView textViewRegister = findViewById(R.id.txt_singin);
         Button btnSignup = (Button) findViewById(R.id.button);
+
         textViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerActivity = new Intent(SignupActivity.this,LoginActivity.class);
-                startActivity(registerActivity);
+
             }
         });
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EditText ed_username = findViewById(R.id.su_username);
+                EditText ed_password = findViewById(R.id.su_password);
+                EditText ed_passcf = findViewById(R.id.su_confirmpassword);
+                TextView tv_error = findViewById(R.id.su_er);
                 Intent registerActivity = new Intent(SignupActivity.this,LoginActivity.class);
-                startActivity(registerActivity);
+                if(ed_username.getText().toString().equals("") || ed_password.getText().toString().equals(""))
+                {
+                    tv_error.setText("Vui lòng nhập username password");
+                }
+                else
+                if(ed_password.toString().equals(ed_passcf.toString()))
+                {
+                    startActivity(registerActivity);
+
+                }
+                else{
+                    tv_error.setText("password không khớp");
+                }
             }
         });
     }
