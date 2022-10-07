@@ -33,12 +33,12 @@ public class SignupActivity extends AppCompatActivity {
                 EditText ed_passcf = findViewById(R.id.su_confirmpassword);
                 TextView tv_error = findViewById(R.id.su_er);
                 Intent registerActivity = new Intent(SignupActivity.this,LoginActivity.class);
-                if(ed_username.getText().toString().equals("") || ed_password.getText().toString().equals(""))
+                if(ed_username.getText().toString().equals("") || ed_password.getText().toString().equals("") || ed_passcf.getText().toString().equals("") )
                 {
                     tv_error.setText("Vui lòng nhập username password");
                 }
                 else
-                if(ed_password.toString().equals(ed_passcf.toString()))
+                if(ed_password.getText().toString().equals(ed_passcf.getText().toString()))
                 {
                     startActivity(registerActivity);
 
