@@ -27,7 +27,7 @@
         android:layout_width="232dp"
         android:layout_height="127dp"
         android:gravity="center"
-        android:textColor="#FFEB3B"
+        android:textColor="#051723"
         android:layout_gravity="center"
         tools:ignore="MissingConstraints"
         android:textSize="17dp"
