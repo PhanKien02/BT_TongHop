@@ -19,6 +19,6 @@ public class DetailActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.iv_dt_ha);
         tvTitle.setText(intent.getStringExtra("title"));
         tvDes.setText(intent.getStringExtra("des"));
-        imageView.setImageResource(intent.getIntExtra("image",R.id.item_image));
+        new DisplayImage(imageView).execute(intent.getStringExtra("image"));
     }
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity"
+    android:background="@drawable/backgroundfruit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm trái cây"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#770A0A"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap ten trai cây"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:textColorHint="#C81717"/>
+    <EditText
+        android:id="@+id/et_add_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap description"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:textColorHint="#C81717"/>
+
+    <ImageView
+        android:id="@+id/img_add_prv"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+    <Button
+        android:id="@+id/btn_add_upload"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Upload image"
+        android:textSize="10pt"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_add_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Fruit"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

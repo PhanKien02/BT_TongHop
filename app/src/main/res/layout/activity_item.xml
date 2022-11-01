@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/item_title"
-        android:layout_width="244dp"
+        android:layout_width="184dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/item_image"
         android:layout_marginStart="19dp"
@@ -30,8 +30,8 @@
 
     <TextView
         android:id="@+id/item_description"
-        android:layout_width="252dp"
-        android:layout_height="45dp"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
         android:layout_below="@+id/item_title"
         android:layout_marginStart="19dp"
         android:layout_marginTop="13dp"
@@ -39,4 +39,14 @@
         android:text="TextView"
         android:textColor="#043A06"
         android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="74dp"
+        android:layout_toEndOf="@+id/item_image"
+        android:text="Button" />
 </RelativeLayout>
