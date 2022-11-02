@@ -52,7 +52,6 @@ public class Adapter extends BaseAdapter {
         TextView titledt = (TextView) view.findViewById(R.id.item_title);
         TextView desdt = (TextView) view.findViewById(R.id.item_description);
         ImageView imageViewdt = (ImageView) view.findViewById(R.id.item_image);
-
         Fruit fruit = Fruits.get(i);
         titledt.setText(fruit.getTitle());
         desdt.setText(fruit.getDescription());

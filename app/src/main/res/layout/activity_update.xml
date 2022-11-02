@@ -5,64 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddActivity"
-    android:background="@drawable/backgroundfruit">
-
+    tools:context=".UpdateActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thêm trái cây"
+        android:text="Cập nhật thông tin trái cây"
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:textColor="#FF5722"
+        android:textColor="#770A0A"
         android:textSize="25dp"
         android:textStyle="bold"/>
     <EditText
-        android:id="@+id/et_add_title"
+        android:id="@+id/et_ud_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nhap ten trai cây"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/botron"
         android:layout_marginRight="40dp"
+        android:background="@drawable/botron"
         android:textColorHint="#C81717"/>
     <EditText
-        android:id="@+id/et_add_des"
+        android:id="@+id/et_ud_des"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nhap description"
-        android:background="@drawable/botron"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/botron"
         android:layout_marginRight="40dp"
         android:textColorHint="#C81717"/>
 
     <ImageView
-        android:id="@+id/img_add_prv"
+        android:id="@+id/img_ud_prv"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="20dp" />
     <android.widget.Button
-        android:id="@+id/btn_add_upload"
+        android:id="@+id/btn_ud_upload"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Upload image"
-        android:backgroundTint="#46BFB4"
-        android:background="@drawable/botron_button"
         android:textSize="10pt"
+        android:background="@drawable/botron_button"
+        android:backgroundTint="#45B898"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"/>
     <android.widget.Button
-        android:id="@+id/btn_add_create"
+        android:id="@+id/btn_ud_update"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Create Fruit"
+        android:text="Update Fruit"
         android:background="@drawable/botron_button"
-        android:backgroundTint="#0BE82F"
         android:layout_gravity="center"
+        android:backgroundTint="#0ADA20"
         android:textSize="10pt"
         android:layout_marginTop="20dp"/>
-
 </LinearLayout>

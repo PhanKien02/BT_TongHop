@@ -10,6 +10,7 @@ import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface FruitService {
@@ -21,4 +22,7 @@ public interface FruitService {
 
     @POST("api/fruits")
     Call<FruitRes> saveFruit(@Body Fruit fruit);
+
+    @PUT("api/fruits")
+    Call<FruitRes> updateFruit(@Body Fruit fruit);
 }

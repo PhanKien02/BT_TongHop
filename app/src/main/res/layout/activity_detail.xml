@@ -21,7 +21,7 @@
         android:id="@+id/tv_dt_title"
         android:layout_width="201dp"
         android:layout_height="81dp"
-        android:gravity="center"
+        android:layout_marginLeft="20dp"
         android:textColor="#F31616"
         android:textStyle="bold"
         android:textSize="20dp"
@@ -29,12 +29,22 @@
 
     <TextView
         android:id="@+id/tv_dt_des"
-        android:layout_width="match_parent"
-        android:layout_height="317dp"
+        android:layout_width="427dp"
+        android:layout_height="230dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="#051723"
+        android:layout_marginLeft="20dp"
         android:textSize="17dp"
         tools:ignore="MissingConstraints" />
+    <android.widget.Button
+        android:id="@+id/btn_dt_update"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_button"
+        android:backgroundTint="#24D311"
+        android:layout_gravity="center"
+        android:text="Update"/>
+
 
 </LinearLayout>

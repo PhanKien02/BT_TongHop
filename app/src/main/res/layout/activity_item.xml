@@ -39,14 +39,4 @@
         android:text="TextView"
         android:textColor="#043A06"
         android:textSize="10pt" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="190dp"
-        android:layout_marginTop="74dp"
-        android:layout_toEndOf="@+id/item_image"
-        android:text="Button" />
 </RelativeLayout>

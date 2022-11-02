@@ -88,7 +88,7 @@ public class ListViewActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Fruit fr = fruits.get(i);
                 Intent detailActiviti = new Intent(ListViewActivity.this, DetailActivity.class);
-                doOpenDetailActivity(fr.getTitle(), fr.getDescription(), fr.getThumbnail(), detailActiviti);
+                doOpenDetailActivity(fr.getId(),fr.getTitle(), fr.getDescription(), fr.getThumbnail(), detailActiviti);
             }
         });
         Button btn_add = findViewById(R.id.btn_them);
@@ -101,12 +101,13 @@ public class ListViewActivity extends AppCompatActivity {
         });
     }
 
-    public void doOpenDetailActivity(String title, String des, String image,Intent myIntent)
+    public void doOpenDetailActivity(Long id,String title, String des, String image,Intent myIntent)
     {
         myIntent = new Intent( this, DetailActivity.class);
         myIntent.putExtra("title",title);
         myIntent.putExtra("des",des);
         myIntent.putExtra("image",image);
+        myIntent.putExtra("id",id);
         startActivity(myIntent);
     }
     public void getAll(){
